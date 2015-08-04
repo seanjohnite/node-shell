@@ -27,4 +27,4 @@ var runCommand = function(cmd, stdin){
 var done = function(output){
   if(command.cmdList.length !== 0) runCommand(command.cmdList.shift(), output);
   else process.stdout.write(output + '\nprompt > ');
-}
+};
